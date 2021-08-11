@@ -40,14 +40,19 @@ body {
 
 .imgSection {
   height: 32%;
-  background-image: linear-gradient(10deg, hsla(244, 38%, 16%, 0.5), hsla(244, 38%, 16%, 0.2) 70%) , url(./images/image-header-mobile.jpg);
+  background-image: linear-gradient(
+      10deg,
+      hsla(244, 38%, 16%, 0.5),
+      hsla(244, 38%, 16%, 0.2) 70%
+    ),
+    url(./images/image-header-mobile.jpg);
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding: 1rem 2rem;
   letter-spacing: -1px;
 }
@@ -59,7 +64,7 @@ h2 span {
 main {
   color: var(--mainParagraphWhite);
   font-size: 1rem;
-  padding: 0 3.5rem;
+  padding: 1rem 3.5rem;
 }
 
 .infoItem {
@@ -76,5 +81,42 @@ main {
   color: var(--statHeadingsWhite);
 }
 
-@media screen {
+@media (min-width: 1140px) {
+  .card {
+    height: 25rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .imgSection {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(123, 42, 148, 0.76),
+        hsla(266, 44%, 44%, 0.493) 70%
+      ),
+      url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .infoSection {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    font-weight: lighter;
+  }
+
+  .stats {
+    display: flex;
+    padding: 2rem;
+  }
 }
